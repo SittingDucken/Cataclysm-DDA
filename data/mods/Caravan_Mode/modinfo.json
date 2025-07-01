@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "caravan_mode",
+    "name": "Caravaneers",
+    "description": "This transforms the game into a STS-like mode.  Pick a campaign, create your character, and keep your caravan alive!",
+    "authors": [ "SittingDucken" ],
+    "maintainers": [ "SittingDucken" ],
+    "category": "total_conversion",
+    "dependencies": [ "dda" ]
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "type": "SCENARIO_BLACKLIST",
+    "subtype": "whitelist",
+    "scenarios": [ "cm_city_start", "cm_lost_start" ]
+  },
+  {
+    "type": "scenario",
+    "id": "cm_city_start",
+    "name": "New Providence",
+    "points": 0,
+    "description": "You find yourself at the heart of New Providence.  A city formed of refugees and hopefuls.",
+    "start_name": "New Providence",
+    "allowed_locs": [ "sloc_field" ],
+    "reveal_locale": false,
+    "distance_initial_visibility": 0,
+    "professions": [ "cm_unemployed" ],
+    "flags": [ "LONE_START" ]
+  },
+  {
+    "type": "scenario",
+    "id": "cm_lost_start",
+    "name": "Caravan Intro",
+    "points": 0,
+    "description": "You find yourself at the start of a burgeoning career.  A caravan of New Providence approaches, the world may have ended but captialism strives ever forward.",
+    "start_name": "Hitchikers Guide to Caravanning",
+    "allowed_locs": [ "sloc_field" ],
+    "reveal_locale": false,
+    "distance_initial_visibility": 0,
+    "professions": [ "cm_unemployed" ],
+    "flags": [ "LONE_START" ],
+    "eoc": [ "cm_lost_start" ]
+  },
+  {
+    "type": "profession",
+    "id": "cm_unemployed",
+    "name": "Lost Traveller",
+    "description": "Some would say that there's nothing particularly notable about you, but you've survived, and that's more than most could say right now.",
+    "points": 0,
+    "starting_cash": 500000,
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "jeans" },
+          { "item": "longshirt" },
+          { "item": "socks" },
+          { "item": "sneakers" },
+          { "item": "mbag" },
+          { "item": "pockknife" },
+          { "item": "water_clean" },
+          { "item": "wristwatch" },
+          { "group": "charged_smart_phone" },
+          { "group": "starter_wallet_full" },
+          { "group": "charged_matches" }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts" } ] },
+      "female": { "entries": [ { "item": "bra" }, { "item": "panties" } ] }
+    }
+  }
+]

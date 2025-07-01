@@ -1,0 +1,8 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_CARAVAN_MODE_LOST",
+    "dynamic_line": "Hey there, stranger!  I'm Nautilus, leader of this little caravan we have here.  We've got quite a few supplies to deliver, and it looks like you could use some help.  Why don't you join us? ",
+    "responses": [ { "text": "Sign me up.", "topic": "TALK_NAUTILUS_REQUIREMENTS", "effect": { "math": [ "cm_end_lost_start == 1" ] } } ]
+  }
+]
