@@ -115,6 +115,7 @@ Use the `Home` key to return to the top.
       - [`oxytorch`](#oxytorch)
       - [`prying`](#prying)
       - [`required_str`](#required_str)
+      - [`mass`](#mass)
       - [`crafting_pseudo_item`](#crafting_pseudo_item)
       - [`workbench`](#workbench)
       - [`plant_data`](#plant_data)
@@ -3187,6 +3188,7 @@ Examples from the actual definitions:
     "deployed_item": "plastic_sheet",
     "light_emitted": 5,
     "required_str": 18,
+    "mass": "60 kg",
     "flags": [ "TRANSPARENT", "BASHABLE", "FLAMMABLE_HARD" ],
     "connect_groups" : [ "WALL" ],
     "connects_to" : [ "WALL" ],
@@ -3357,6 +3359,10 @@ oxytorch: {
 #### `required_str`
 
 Strength required to move the furniture around. Negative values indicate an unmovable furniture.
+
+#### `mass`
+
+(Optional) Defaults 1000 kilograms. The weight of this furniture.
 
 #### `crafting_pseudo_item`
 
@@ -4063,7 +4069,7 @@ Defaults true. If a road can be found within 3 OMTs of the starting position, re
 
 Defaults 15. How much of the initial map should be known when the game is started? This value is a radius.
 
-## `eocs`
+## `eoc`
 (optional, array of strings)
 
 A list of eocs that are triggered once for each new character on scenario start.
