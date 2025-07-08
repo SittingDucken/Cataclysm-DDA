@@ -7,13 +7,81 @@
       { "math": [ "diffulty_modifier = 1" ] },
       { "math": [ "wave_money_modifier = -1000" ] },
       { "open_dialogue": { "topic": "TALK_DEFENSE_MODE_MAIN_MENU" } },
+      { "mapgen_update": "faction_start_add_dm" }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "faction_start_add_dm",
+    "object": {
+      "faction_owner": [ { "id": "your_followers", "x": [ 1, 23 ], "y": [ 1, 23 ] } ],
+      "place_npcs": [ { "class": "your_follower_base_setup", "x": 10, "y": 10 } ],
+      "place_nested": [ { "chunks": [ "4x4_dm_tools" ], "x": [ 3 ], "y": [ 3 ] } ]
+    }
+  },
+  {
+    "type": "npc",
+    "id": "your_follower_base_setup_dm",
+    "//": "Scenario specific, should not spawn outside of trigger events.  Workaround to start a faction camp",
+    "class": "NC_BOUNTY_HUNTER",
+    "attitude": 1,
+    "mission": 0,
+    "chat": "TALK_DEFENSE_MODE_MAIN_MENU",
+    "faction": "no_faction"
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "4x4_dm_tools",
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rows": [
+        "   2",
+        "   2",
+        "   2",
+        "!222"
+      ],
+      "palettes": [ "shelter_unfinished" ],
+      "furniture": { "!": "f_crate_o", "2": "f_crate_o" },
+      "items": {
+        "!": [
+          { "item": "dm_tools", "chance": 100, "faction": "your_followers" },
+          { "item": "dm_steel_plating", "chance": 100, "faction": "your_followers" }
+        ],
+        "2": [
+          { "item": "faction_camp_misc", "chance": 80, "repeat": [ 1, 2 ], "faction": "your_followers" },
+          { "item": "trash_junkyard", "chance": 80, "repeat": [ 6, 9 ], "faction": "your_followers" },
+          { "item": "tools_home", "chance": 95, "faction": "your_followers" },
+          { "item": "dishes_utility", "chance": 80, "repeat": [ 2, 3 ], "faction": "your_followers" }
+        ]
+      }
+    }
+  },
+  {
+    "id": "dm_tools",
+    "type": "item_group",
+    "//": "Tools commonly found in the home or other domestic settings",
+    "items": [
       {
-        "u_location_variable": { "global_val": "your_spawnpoint" },
-        "target_max_radius": 2,
-        "min_radius": 0,
-        "max_radius": 0
+        "collection": [
+          { "item": "oxy_torch", "prob": 100 },
+          {
+            "distribution": [
+              { "item": "weldtank", "prob": 100, "count": [ 1, 2 ] },
+              { "item": "tinyweldtank", "prob": 100, "count": [ 1, 3 ] },
+              { "item": "smallweldtank", "prob": 100, "count": [ 1, 3 ] }
+            ],
+            "prob": 100
+          }
+        ],
+        "prob": 100
       }
     ]
+  },
+  {
+    "id": "dm_steel_plating",
+    "type": "item_group",
+    "//": "Steel plating to kickoff defense mode",
+    "items": [ { "item": "steel_plate", "prob": 100, "count": [ 32, 48 ] } ]
   },
   {
     "type": "effect_on_condition",

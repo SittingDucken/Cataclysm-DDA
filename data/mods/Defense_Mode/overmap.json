@@ -10,6 +10,7 @@
     "name": "OVERMAP_PLACE_ROADS",
     "stype": "bool",
     "value": false
+<<<<<<< Updated upstream
   },
   {
     "type": "EXTERNAL_OPTION",
@@ -144,5 +145,7 @@
     "color": "green",
     "see_cost": "spaced_high",
     "flags": [ "REQUIRES_PREDECESSOR" ]
+=======
+>>>>>>> Stashed changes
   }
 ]
