@@ -88,6 +88,7 @@
     "default_faction": "UPLIFT",
     "bodytype": "human",
     "species": [ "UPLIFT" ],
+    "categories": [ "AFTERSHOCK" ],
     "diff": 5,
     "volume": "62500 ml",
     "weight": "81500 g",

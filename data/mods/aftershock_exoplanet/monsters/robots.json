@@ -327,6 +327,7 @@
   {
     "id": "mon_bloodhound_drone",
     "copy-from": "base_drone",
+    "categories": [ "AFTERSHOCK" ],
     "type": "MONSTER",
     "name": { "str": "bloodhound drone" },
     "description": "A small, spiked quadcopter robot equipped with a high-power spotlight.  This automated seeker drone was originally designed to harry and harass fugitives while maintaining visual contact for other pursuers.",
@@ -512,6 +513,7 @@
     "id": "mon_fumigator",
     "type": "MONSTER",
     "copy-from": "base_drone",
+    "categories": [ "AFTERSHOCK" ],
     "name": "Croplord 2SPL",
     "description": "Twin linked rotors allow this ubiquitous EINAC drone to comfortably hover above fields and deploy pesticides at prodigious rates.  They have no ability to detect humans within their work areas and will readily disperse lethal pesticides near them.",
     "default_faction": "rampant_machine",
@@ -901,6 +903,7 @@
   {
     "id": "mon_wraitheon_kaburaya",
     "copy-from": "base_drone",
+    "categories": [ "AFTERSHOCK" ],
     "type": "MONSTER",
     "name": { "str_sp": "Wraitheon Kabura-ya" },
     "description": "A microplane drone designed to seek enemy personnel before detonating at close range.",

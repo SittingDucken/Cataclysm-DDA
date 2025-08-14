@@ -19,6 +19,7 @@
   {
     "id": "mon_light_hack",
     "copy-from": "base_drone",
+    "categories": [ "AFTERSHOCK" ],
     "type": "MONSTER",
     "name": "floating lantern",
     "looks_like": "bot_manhack",

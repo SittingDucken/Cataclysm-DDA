@@ -3,7 +3,8 @@
     "//": "edited from no_wildlife",
     "type": "MONSTER_WHITELIST",
     "mode": "EXCLUSIVE",
-    "categories": [ "WILDLIFE", "MUTANT" ],
-    "species": [ "MOXIE", "ROBOT" ]
+    "categories": [ "WILDLIFE", "MUTANT", "AFTERSHOCK" ],
+    "species": [ "MOXIE", "ROBOT", "ROBOT_FLYING", "HALLUCINATION", "BIOMACHINE" ],
+    "monsters": [ "mon_hologram" ]
   }
 ]
